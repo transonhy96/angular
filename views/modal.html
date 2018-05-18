@@ -1,0 +1,34 @@
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Add new Student</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name" class="control-label">Name:</label>
+                  <input type="text" class="form-control" id="name" ng-model="modal.name" >
+                </div>
+                <div class="form-group">
+                  <label for="age" class="control-label">Age:</label>
+                  <input class="form-control" type="number" id="age" ng-model="modal.age">
+                </div>
+                <div class="form-group">
+                        <label for="address" class="control-label">Address:</label>
+                        <textarea class="form-control" id="address" ng-model="modal.address" ></textarea >
+                </div>
+                <div class="form-group">
+                        <label for="phone" class="control-label">Phone:</label>
+                        <input class="form-control" id="phone"  ng-model="modal.phone">
+                </div>
+                      
+              </form>
+            </div>
+            <div class="modal-footer">
+                
+                <button ng-click="onSave()" data-dismiss="modal" class="btn btn-success">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>

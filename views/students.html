@@ -1,0 +1,34 @@
+
+<div class="container">
+  <table class="table table-bordered table-hover">
+    <thead >
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Address</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="student in students" >
+         
+        <th scope="row">{{$index}}</th>
+        <td>{{student.id|| "No data"}}</td>
+        <td>{{student.name|| "No data"}}</td>
+        <td>{{student.age || "No data"}}</td>
+        <td>{{student.address|| "No data"}}</td>
+        <td>{{student.phone|| "No data"}}</td>      
+        <td>
+            <button class="btn btn-success" ng-click="updateStudent(student)">
+                Update
+            </button>
+          <button class="btn btn-danger"  ng-click="deleteStudent(student.id)">Delete</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

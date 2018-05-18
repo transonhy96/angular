@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="row mt-2" ng-repeat="user in users">
+    <div class="col-md-6 card">
+        <p>UserId: {{user.id}}</p>
+        <p>Username: {{user.username}}</p>
+        <p>Email: {{user.email}}</p>
+        <p>Address: </p>
+        <p>Street: {{user.address.street}}</p>
+        <p>City: {{user.address.city}}</p>
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-danger" ng-click="deleteUser($index)">Delete</button>
+    </div>
+  </div>
+</div>
